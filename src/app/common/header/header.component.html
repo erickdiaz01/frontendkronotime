@@ -1,0 +1,249 @@
+<div id="shopify-section-header" class="shopify-header">
+  <div class="header-fix">
+    <div class="top-head-icons">
+      <div class="page-container">
+        <ul class="menu-right">
+          <li class="list-icons">
+            <img
+              class="lazypreload js ls-is-cached lazyloaded"
+              src="https://cdn.shopify.com/s/files/1/0275/8420/0792/files/truck.svg?v=1583794982"
+              width="40"
+              height="23"
+              alt="Envíos a toda Colombia"
+            />
+            Envios a todo Colombia
+          </li>
+          <li class="list-icons">
+            <a
+              href="https://invicta-colombia.myshopify.com/pages/contactanos"
+              aria-describedby="a11y-external-message"
+            >
+              <img
+                class="lazypreload js ls-is-cached lazyloaded"
+                src="https://cdn.shopify.com/s/files/1/0275/8420/0792/files/mail.svg?v=1583795310"
+                width="27"
+                height="23"
+                title="Contáctanos"
+                alt="mail"
+              />
+              &nbsp;Contáctanos</a
+            >
+          </li>
+          <li class="list-icons">
+            <a
+              href="https://invicta-colombia.myshopify.com/account/login"
+              aria-describedby="a11y-external-message"
+            >
+              <img
+                class="lazypreload js ls-is-cached lazyloaded"
+                src="https://cdn.shopify.com/s/files/1/0275/8420/0792/files/user.svg?v=1583796159"
+                width="26"
+                height="23"
+                title="Iniciar sesión"
+                alt="usuario"
+              />&nbsp;Inicio Sesión</a
+            >
+          </li>
+        </ul>
+
+        <ul class="menu-left">
+          <div class="linktop">
+            <a
+              href="https://technomarine.co/"
+              aria-describedby="a11y-external-message"
+              target="_blank"
+            >
+              <span>Visita también</span>
+              <img
+                class="lazypreload js ls-is-cached lazyloaded"
+                src="https://cdn.shopify.com/s/files/1/0250/1433/7599/files/logo-txt-techno.png?v=1604014340"
+                alt="technomarine.co"
+            /></a>
+          </div>
+        </ul>
+      </div>
+    </div>
+    <header class="site-header" role="banner">
+      <div class="grid-table">
+        <div class="grid-item" id="header-logo">
+          <div class="site-header-logo">
+            <a href="/" class="site-header__logo-image">
+              <img
+                src="//cdn.shopify.com/s/files/1/0275/8420/0792/files/logo-invicta_300x300.png?v=1614355512"
+                data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+                data-aspectratio="5.454545454545454"
+                data-sizes="auto"
+                alt="Invicta Colombia Logo"
+                style="max-width: 175px"
+              />
+            </a>
+            <div class="official-store-pe">
+              <a href="/">
+                <img
+                  class="banner-desktop"
+                  src="https://cdn.shopify.com/s/files/1/0275/8420/0792/files/logo-invicta-col.png?v=1605634902"
+                  alt="The Official Store"
+                  width="66"
+                  height="65"
+                />
+                <img
+                  class="banner-mobile"
+                  alt="The Official Store"
+                  width="53"
+                  height="53"
+                  src="https://cdn.shopify.com/s/files/1/0275/8420/0792/files/logo-invicta-col.png?v=1605634902"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <nav class="grid-item" id="AccessibleNav" role="navigation">
+          <ul class="navigation-items">
+            <li>
+              <button mat-button [matMenuTriggerFor]="renta">
+                Colecciones
+                <mat-icon> expand_more </mat-icon>
+              </button>
+              <mat-menu #renta="matMenu">
+                <button mat-menu-item routerLink="/dashboard/crear-afiliacion">
+                  Crear Renta
+                </button>
+                <button mat-menu-item routerLink="/dashboard/lista-rentas">
+                  Listar Rentas
+                </button>
+              </mat-menu>
+              <!-- <a routerLink="/dashboard/crear-afiliacion">Crear Renta</a> -->
+            </li>
+            <li>
+              <button mat-button [matMenuTriggerFor]="causante">
+                Causante
+              </button>
+              <mat-menu #causante="matMenu">
+                <button mat-menu-item routerLink="/dashboard/lista-causantes">
+                  Lista causantes
+                </button>
+              </mat-menu>
+            </li>
+            <li>
+              <button mat-button [matMenuTriggerFor]="beneficiario">
+                Hombre
+              </button>
+              <mat-menu #beneficiario="matMenu">
+                <button
+                  mat-menu-item
+                  routerLink="/dashboard/lista-beneficiarios"
+                >
+                  Lista beneficiarios
+                </button>
+                <button mat-menu-item routerLink="/dashboard/calcular-mesada">
+                  Valor de mesada
+                </button>
+              </mat-menu>
+            </li>
+            <li>
+              <button mat-button [matMenuTriggerFor]="beneficiario">
+                Mujer
+              </button>
+              <mat-menu #beneficiario="matMenu">
+                <button
+                  mat-menu-item
+                  routerLink="/dashboard/lista-beneficiarios"
+                >
+                  Lista beneficiarios
+                </button>
+                <button mat-menu-item routerLink="/dashboard/calcular-mesada">
+                  Valor de mesada
+                </button>
+              </mat-menu>
+            </li>
+            <li>
+              <button mat-button [matMenuTriggerFor]="beneficiario">
+                Gafas a 199.900
+              </button>
+              <mat-menu #beneficiario="matMenu">
+                <button
+                  mat-menu-item
+                  routerLink="/dashboard/lista-beneficiarios"
+                >
+                  Lista beneficiarios
+                </button>
+                <button mat-menu-item routerLink="/dashboard/calcular-mesada">
+                  Valor de mesada
+                </button>
+              </mat-menu>
+            </li>
+            <li>
+              <button mat-button [matMenuTriggerFor]="beneficiario">
+                Super Oferta
+              </button>
+              <mat-menu #beneficiario="matMenu">
+                <button
+                  mat-menu-item
+                  routerLink="/dashboard/lista-beneficiarios"
+                >
+                  Lista beneficiarios
+                </button>
+                <button mat-menu-item routerLink="/dashboard/calcular-mesada">
+                  Valor de mesada
+                </button>
+              </mat-menu>
+            </li>
+          </ul>
+          <span style="margin: auto 10px"></span>
+        </nav>
+        <div class="grid-item" id="icons-wrapper">
+          <div class="site-header-iconswrapper">
+            <button button mat-icon-button>
+              <mat-icon style="color: white">search</mat-icon>
+            </button>
+            <button button mat-icon-button>
+              <!-- <div
+                id="CartCount"
+                class="site-header__cart-count"
+                data-cart-count-bubble=""
+              >
+                <span data-cart-count="">1</span>
+                <span class="icon__fallback-text medium-up--hide"
+                  >artículo</span
+                >
+              </div> -->
+              <mat-icon style="color: white">shopping_cart</mat-icon>
+            </button>
+            <button button mat-icon-button class="account">
+              <mat-icon style="color: white">person</mat-icon>
+            </button>
+            <button mat-icon-button>
+              <mat-icon style="color: white"> favorite </mat-icon>
+            </button>
+            <button
+              mat-icon-button
+              id="menuSideBar"
+              (click)="onToggleSidenav()"
+            >
+              <mat-icon style="color: white"> menu </mat-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="marquee-container">
+      <div class="marquee-content">
+        <ul class="items-marquee">
+          <li class="marquee-item">
+            <mat-icon>local_shipping</mat-icon> ENTREGA EN 24 HORAS EN LA CIUDAD
+            DE BOGOTÁ
+          </li>
+          <li class="marquee-item">
+            <mat-icon>support_agent</mat-icon>
+            CELULAR: (57) 333-6025027 FIJO: (1) 654-0434 OPCIÓN: 1</li>
+          <li class="marquee-item">
+            <mat-icon>verified_user</mat-icon>3 AÑOS DE GARANTIA INVICTA</li>
+            <li class="marquee-item">
+              <mat-icon>inventory</mat-icon>DISTRIBUIDORES OFICIALES EN COLOMBIA</li>
+              <li class="marquee-item">
+                <mat-icon>security</mat-icon>SEGURIDAD EN TU COMPRA</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
