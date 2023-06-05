@@ -1,1 +1,114 @@
-<p>footer works!</p>
+<footer>
+  <section class="newsletter">
+    <div class="newslettercontent">
+      <div class="header-newsletter">
+        <h2>INVICTA AL DIA</h2>
+        <div class="sub-header-newsletter">
+          <p>INSCRIBETE A NUESTRO NEWSLETTER PARA CONOCER</p>
+          <p>ACERCA DE NUESTRAS PROMOCIONES, EVENTOS Y DESCUENTOS VIGENTES</p>
+        </div>
+      </div>
+      <form [formGroup]="contactForm" class="form-contact">
+        <div class="input-group">
+          <input
+            type="email"
+            name="contact-email"
+            id="contact-email"
+            placeholder="Direccion de correo electronico"
+            formControlName="email"
+          />
+          <span class="button-suscribirse">
+            <button
+              type="button"
+              class="btn-newsletter"
+              [disabled]="contactForm.valid"
+            >
+              Suscribirse
+            </button>
+          </span>
+        </div>
+        <div class="tyc">
+          <input
+            type="checkbox"
+            name="autorizo-tyc"
+            id="autorizo-tyc"
+            formControlName="tyc"
+          />
+          <span
+            >Autorizo el tratamiento de mis <strong>Datos personales</strong>
+          </span>
+          <mat-error
+            *ngIf="
+              contactForm.get('email')?.invalid &&
+              (contactForm.get('email')?.dirty ||
+                contactForm.get('email')?.touched)
+            "
+          >
+            El correo es requerido
+          </mat-error>
+          <mat-error
+            *ngIf="
+              contactForm.get('tyc')?.invalid && contactForm.get('tyc')?.touched
+            "
+          >
+            Acepta los terminos y condiciones
+          </mat-error>
+        </div>
+      </form>
+    </div>
+  </section>
+  <section class="bottom-footer">
+    <a href="#">
+      <img
+        src="https://cdn.shopify.com/s/files/1/0250/1433/7599/files/banner-categoria-mexico-tiendas_Mesa_de_trabajo_1_copia_2.jpg?v=1585315781"
+        width="100%"
+      />
+    </a>
+    <article class="content-bottom-footer">
+      <div class="row">
+        <div class="col">
+          <h3>SERVICIO AL CLIENTE</h3>
+          <ul class="footer-list">
+            <li class="footer-list-item">Contáctanos</li>
+            <li class="footer-list-item">Métodos de pago</li>
+            <li class="footer-list-item">Cambios y Devoluciones</li>
+            <li class="footer-list-item">Guias de tallas</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3 style="visibility: hidden">Siguenos</h3>
+          <ul class="footer-list">
+            <li class="footer-list-item">Encuesta</li>
+            <li class="footer-list-item">SIC</li>
+            <li class="footer-list-item">ADDI</li>
+            <li class="footer-list-item">Recoge en tienda</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>Nuestra empresa</h3>
+          <ul class="footer-list">
+            <li class="footer-list-item">Quiénes somos</li>
+            <li class="footer-list-item">Localizador de Tiendas</li>
+            <li class="footer-list-item">Prensa</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>Siguenos</h3>
+          <ul class="icons-social">
+            <li class="icon-white"><i class="fab fa-facebook"></i></li>
+            <li class="icon-white"><i class="fab fa-instagram"></i></li>
+            <li class="icon-white"><i class="fab fa-tiktok"></i></li>
+          </ul>
+        </div>
+      </div>
+    </article>
+    <article class="politics-container">
+      <p>©2023 Invicta</p>
+      <ul class="politics">
+        <li class="politics-item">TÉRMINOS Y CONDICIONES</li>
+        <li class="politics-item">POLÍTICA DE PRIVACIDAD</li>
+        <li class="politics-item">POLÍTICA DE GARANTÍAS</li>
+      </ul>
+    </article>
+  </section>
+</footer>

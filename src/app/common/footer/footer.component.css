@@ -1,0 +1,196 @@
+@media only screen and (max-width: 750px) {
+  .newsletter {
+    margin-top: 40px;
+  }
+  .newslettercontent {
+    margin-top: 40px;
+
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .header-newsletter {
+    margin-top: 0;
+  }
+  .header-newsletter h2 {
+    line-height: 2em;
+  }
+  .sub-header-newsletter {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+.header-newsletter {
+  margin-bottom: 60px;
+  text-align: center;
+}
+.header-newsletter h2 {
+  display: block;
+  font-size: 2.125em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 0 0 0;
+  font-family: "d-dindin-bold";
+  font-style: normal;
+  font-weight: 600;
+  word-wrap: break-word;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.sub-header-newsletter {
+  border-top: 3px solid #feee00;
+  border-bottom: 3px solid #feee00;
+  padding: 10px 0;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px px;
+  color: #fff;
+}
+.newsletter {
+  background: #000;
+  color: #fff;
+  padding-top: 55px;
+}
+.newslettercontent {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.newslettercontent::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.form-contact {
+  margin: auto 55px;
+  max-width: 70rem;
+}
+
+.input-group {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+#contact-email {
+  margin-right: 10px;
+  min-height: 42px;
+  padding: 8px 15px;
+  max-width: 100%;
+  line-height: 1.2;
+  border: 1px solid #949494;
+  font-family: "DIN Next", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  touch-action: manipulation;
+  width: 70%;
+}
+
+.btn-newsletter {
+  border-radius: 0 2px 2px 0;
+  appearance: none;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  padding: 8px 15px;
+  background-color: #feee00;
+  color: black;
+  font-family: "DIN Next", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  white-space: normal;
+}
+.btn-newsletter:hover {
+  color: #fff;
+  background-color: green;
+}
+
+.bottom-footer {
+  background-color: #000000;
+  margin-top: 0px;
+  padding: 0;
+  display: block;
+}
+.bottom-footer a {
+  color: #3d4246;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.content-bottom-footer {
+  width: 100%;
+  margin: 0 auto;
+
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.col {
+  flex: 1;
+
+
+}
+
+.content-bottom-footer h3 {
+  color: #fff !important;
+  margin-left: 2.5rem;
+  margin-bottom: 0.42857143rem;
+  font-size: 0.85714286rem;
+  line-height: 1.14285714rem;
+  letter-spacing: 0.07142857rem;
+  text-transform: uppercase;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 700;
+}
+.footer-list{
+  list-style: none;
+}
+.footer-list-item{
+  margin-bottom: 10px;
+}
+.icons-social{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.icon-white{
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.icon-white i {
+  font-size: 18px;
+  color: #000;
+}
+.politics-container{
+  display: flex;
+  justify-content: space-around;
+}
+.politics{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+.politics-item{
+  color: white;
+  margin: auto 10px;
+  text-transform: uppercase;
+  font-size: smaller;
+}
+@media (max-width: 768px) {
+}
