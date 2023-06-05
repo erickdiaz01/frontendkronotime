@@ -2,12 +2,13 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
 .page-container {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
-  margin: auto 10px;
+  margin: auto ;
   background: #feee00;
   height: 40px;
   z-index: 99999;
@@ -194,7 +195,7 @@ mat-toolbar {
 
 
 .marquee-container ul li {
-padding-right: 20px;
+  margin-left: 20px;
 
 }
 

@@ -1,3 +1,50 @@
+<div class="home-container">
+  <div class="slick-container">
+    <div class="slick-wrapper">
+      <ngx-slick-carousel
+        class="carousel"
+        #slickModal="slick-carousel"
+        [config]="slideBannerConfig"
+        (init)="slickInit($event)"
+        (breakpoint)="breakpoint($event)"
+        (afterChange)="afterChange($event)"
+        (beforeChange)="beforeChange($event)"
+      >
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+          <img src="{{ slide.img }}" alt="" width="100%" />
+        </div>
+      </ngx-slick-carousel>
+    </div>
+  </div>
+  <section class="second-banners">
+    <div class="container-second-banner">
+      <img src="../../../../assets/secondbanner1.jpg" alt="" />
+    </div>
+    <div class="container-second-banner">
+      <img src="../../../../assets/secondbanner2.jpg" alt="" />
+    </div>
+  </section>
 
-<p>home works!</p>
-
+  <section class="product-slides">
+    <div class="slick-container">
+      <div class="title-container">
+        <h3>¡GAFAS DE SOL!</h3>
+      </div>
+      <div class="slick-wrapper">
+        <ngx-slick-carousel
+          class="carousel"
+          #slickModal="slick-carousel"
+          [config]="slideProductsConfig"
+          (init)="slickInit($event)"
+          (breakpoint)="breakpoint($event)"
+          (afterChange)="afterChange($event)"
+          (beforeChange)="beforeChange($event)"
+        >
+          <div  ngxSlickItem *ngFor="let slide of slides" class="slideProduct">
+            <img src="{{ slide.img }}" alt="" width="100%" />
+          </div>
+        </ngx-slick-carousel>
+      </div>
+    </div>
+  </section>
+</div>
