@@ -1,14 +1,10 @@
-<div class="home-container">
+<div class="home-container" >
   <div class="slick-container">
     <div class="slick-wrapper">
       <ngx-slick-carousel
         class="carousel"
         #slickModal="slick-carousel"
         [config]="slideBannerConfig"
-        (init)="slickInit($event)"
-        (breakpoint)="breakpoint($event)"
-        (afterChange)="afterChange($event)"
-        (beforeChange)="beforeChange($event)"
       >
         <div ngxSlickItem *ngFor="let slide of slidesBanner" class="slide">
           <img src="{{ slide.img }}" alt="" width="100%" />
@@ -35,10 +31,6 @@
           class="carousel"
           #slickModal="slick-carousel"
           [config]="slideProductsConfig"
-          (init)="slickInit($event)"
-          (breakpoint)="breakpoint($event)"
-          (afterChange)="afterChange($event)"
-          (beforeChange)="beforeChange($event)"
         >
           <div
             ngxSlickItem
@@ -62,8 +54,12 @@
     <img
       class="wa-chat-btn-icon-image-only"
       alt="Whatsapp Chat Button"
-
       src="https://cdn.shopify.com/s/files/1/0070/3666/5911/files/ic-2.svg?v=1584017541/"
     />
   </a>
+
+  <div *ngIf="mostrarPopUp" class="popup">
+    <img src="../../../../assets/popup.jpg" alt="popup" class="popup-image" />
+    <button class="close-button" (click)="cerrarPopUp()"><i class="fa fa-times"></i></button>
+  </div>
 </div>

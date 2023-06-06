@@ -1,11 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
+  mostrarPopUp: boolean = false;
+  ngOnInit(): void {
+    setTimeout(() => {
+      this.mostrarPopUp = true;
+    }, 2000);
+  }
+  cerrarPopUp() {
+    this.mostrarPopUp = false;
+  }
   slidesBanner = [
     {
       img: 'https://cdn.shopify.com/s/files/1/0275/8420/0792/files/inv-col-papa-desde-299900_banner-principal-desk-1920x650.jpg?v=1685640381',
@@ -110,16 +119,4 @@ export class HomeComponent {
       },
     ],
   };
-  slickInit(e: any) {
-    console.log('slick initialized');
-  }
-  breakpoint(e: any) {
-    console.log('breakpoint');
-  }
-  afterChange(e: any) {
-    console.log('afterChange');
-  }
-  beforeChange(e: any) {
-    console.log('beforeChange');
-  }
 }
