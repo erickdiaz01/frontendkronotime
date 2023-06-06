@@ -100,15 +100,19 @@ a {
 }
 .grid-table {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 .site-header-iconswrapper {
   display: flex;
   justify-content: left;
   align-items: center;
 }
+.site-header-iconswrapper button{
+  padding: 0;
+}
 .grid-item {
-  margin: 0;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .banner-mobile {
@@ -131,6 +135,9 @@ a {
   .account {
     display: block;
   }
+  .grid-table {
+    justify-content: space-between;
+  }
 }
 @media (max-width: 995px) {
   #AccessibleNav {
@@ -139,13 +146,16 @@ a {
   #menuSideBar {
     display: block;
   }
+  .grid-table {
+    justify-content: space-between;
+  }
 }
 .grid-table a {
   text-decoration: none;
   color: white;
 }
 .grid-table li {
-  margin: auto 5px;
+  margin: auto 3px;
   font-size: medium;
 }
 
@@ -155,7 +165,7 @@ a {
   margin: 0;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: left;
 }
 
 .navigation-items button {

@@ -1,5 +1,6 @@
 .home-container {
   width: 100%;
+  padding-bottom: 20px;
 }
 /* .carousel{
   width: 100%;
@@ -72,5 +73,54 @@
   text-transform: uppercase;
 }
 .slideProduct {
-  margin:  0 10px;
+  margin: 0 10px;
+}
+
+.container-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+.ver-todo {
+  background-color: #feee00;
+  color: black;
+  font-family: "DIN Next", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  white-space: normal;
+  font-size: 13px;
+  display: inline-block;
+  width: auto;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 2px;
+}
+
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  color: white;
+  font-size: 24px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  transition: background-color 0.3s ease;
+  z-index: 999;
+}
+.fi-brands-whatsapp{
+  z-index: 1;
+}
+
+.whatsapp-icon:hover {
+  opacity: 0.9;
 }

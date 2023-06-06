@@ -1,0 +1,25 @@
+<mat-card class="example-card">
+  <img mat-card-image src="{{ product.img }}" alt="product-image" />
+  <button aria-label="Añadir a favoritos" class="favorite">
+    <mat-icon>favorite</mat-icon>
+  </button>
+  <p class="discount">{{ product.discount | percent }}</p>
+  <mat-card-content>
+    <h4 class="product-description">
+      {{ product.description }}
+    </h4>
+  </mat-card-content>
+  <mat-card-actions class="card-bottom">
+    <div class="prices">
+      <p class="oldprice">
+        {{ product.oldprice | currency : "" : "symbol" : "1.0" }}
+      </p>
+      <p class="newprice">
+        {{
+          product.oldprice * (1 - product.discount)
+            | currency : "" : "symbol" : "1.0"
+        }}
+      </p>
+    </div>
+  </mat-card-actions>
+</mat-card>

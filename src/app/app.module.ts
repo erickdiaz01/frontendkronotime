@@ -11,6 +11,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material/material.module';
 import { SidebarComponent } from './common/sidebar/sidebar.component';
 import { HomeComponent } from './shared/pages/home/home.component';
+import { CardProductComponent } from './common/card-product/card-product.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { HomeComponent } from './shared/pages/home/home.component';
     HomeComponent,
     FooterComponent,
     SidebarComponent,
+    CardProductComponent,
   ],
   imports: [
     BrowserModule,

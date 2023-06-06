@@ -10,7 +10,7 @@
         (afterChange)="afterChange($event)"
         (beforeChange)="beforeChange($event)"
       >
-        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+        <div ngxSlickItem *ngFor="let slide of slidesBanner" class="slide">
           <img src="{{ slide.img }}" alt="" width="100%" />
         </div>
       </ngx-slick-carousel>
@@ -40,11 +40,30 @@
           (afterChange)="afterChange($event)"
           (beforeChange)="beforeChange($event)"
         >
-          <div  ngxSlickItem *ngFor="let slide of slides" class="slideProduct">
-            <img src="{{ slide.img }}" alt="" width="100%" />
+          <div
+            ngxSlickItem
+            *ngFor="let slide of slidesProduct"
+            class="slideProduct"
+          >
+            <app-card-product [product]="slide"></app-card-product>
           </div>
         </ngx-slick-carousel>
       </div>
     </div>
+    <div class="container-button">
+      <button mat-raised-button class="ver-todo">VER TODO</button>
+    </div>
   </section>
+  <a
+    href="https://api.whatsapp.com/send?phone=573043695986"
+    target="_blank"
+    class="whatsapp-icon"
+  >
+    <img
+      class="wa-chat-btn-icon-image-only"
+      alt="Whatsapp Chat Button"
+
+      src="https://cdn.shopify.com/s/files/1/0070/3666/5911/files/ic-2.svg?v=1584017541/"
+    />
+  </a>
 </div>

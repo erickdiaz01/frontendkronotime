@@ -114,19 +114,10 @@
               </mat-menu>
               <!-- <a routerLink="/dashboard/crear-afiliacion">Crear Renta</a> -->
             </li>
-            <li>
-              <button mat-button [matMenuTriggerFor]="causante">
-                Causante
-              </button>
-              <mat-menu #causante="matMenu">
-                <button mat-menu-item routerLink="/dashboard/lista-causantes">
-                  Lista causantes
-                </button>
-              </mat-menu>
-            </li>
+
             <li>
               <button mat-button [matMenuTriggerFor]="beneficiario">
-                Hombre
+                Hombre <mat-icon> expand_more </mat-icon>
               </button>
               <mat-menu #beneficiario="matMenu">
                 <button
@@ -142,7 +133,7 @@
             </li>
             <li>
               <button mat-button [matMenuTriggerFor]="beneficiario">
-                Mujer
+                Mujer <mat-icon> expand_more </mat-icon>
               </button>
               <mat-menu #beneficiario="matMenu">
                 <button
@@ -158,7 +149,7 @@
             </li>
             <li>
               <button mat-button [matMenuTriggerFor]="beneficiario">
-                Gafas a 199.900
+                Gafas a 199.900 <mat-icon> expand_more </mat-icon>
               </button>
               <mat-menu #beneficiario="matMenu">
                 <button
@@ -174,7 +165,7 @@
             </li>
             <li>
               <button mat-button [matMenuTriggerFor]="beneficiario">
-                Super Oferta
+                Super Oferta <mat-icon> expand_more </mat-icon>
               </button>
               <mat-menu #beneficiario="matMenu">
                 <button
@@ -197,16 +188,6 @@
               <mat-icon style="color: white">search</mat-icon>
             </button>
             <button button mat-icon-button>
-              <!-- <div
-                id="CartCount"
-                class="site-header__cart-count"
-                data-cart-count-bubble=""
-              >
-                <span data-cart-count="">1</span>
-                <span class="icon__fallback-text medium-up--hide"
-                  >artículo</span
-                >
-              </div> -->
               <mat-icon style="color: white">shopping_cart</mat-icon>
             </button>
             <button button mat-icon-button class="account">
