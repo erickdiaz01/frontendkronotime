@@ -100,19 +100,19 @@
         <nav class="grid-item" id="AccessibleNav" role="navigation">
           <ul class="navigation-items">
             <li>
-              <button mat-button [matMenuTriggerFor]="renta">
+              <button mat-button [matMenuTriggerFor]="colecciones">
                 Colecciones
                 <mat-icon> expand_more </mat-icon>
               </button>
-              <mat-menu #renta="matMenu">
-                <button mat-menu-item routerLink="/dashboard/crear-afiliacion">
-                  Crear Renta
+              <mat-menu #colecciones="matMenu">
+                <button mat-menu-item routerLink="/">
+                  Colecciones 1
                 </button>
                 <button mat-menu-item routerLink="/dashboard/lista-rentas">
-                  Listar Rentas
+                 Colecciones 2
                 </button>
               </mat-menu>
-              <!-- <a routerLink="/dashboard/crear-afiliacion">Crear Renta</a> -->
+
             </li>
 
             <li>
@@ -122,12 +122,12 @@
               <mat-menu #beneficiario="matMenu">
                 <button
                   mat-menu-item
-                  routerLink="/dashboard/lista-beneficiarios"
+                  routerLink="/"
                 >
-                  Lista beneficiarios
+                 Hombre 1
                 </button>
-                <button mat-menu-item routerLink="/dashboard/calcular-mesada">
-                  Valor de mesada
+                <button mat-menu-item routerLink="/">
+                  Hombre 2
                 </button>
               </mat-menu>
             </li>
@@ -138,12 +138,12 @@
               <mat-menu #beneficiario="matMenu">
                 <button
                   mat-menu-item
-                  routerLink="/dashboard/lista-beneficiarios"
+                  routerLink="/"
                 >
-                  Lista beneficiarios
+                  Mujer 1
                 </button>
-                <button mat-menu-item routerLink="/dashboard/calcular-mesada">
-                  Valor de mesada
+                <button mat-menu-item routerLink="/">
+                 Mujer 2
                 </button>
               </mat-menu>
             </li>
@@ -154,12 +154,12 @@
               <mat-menu #beneficiario="matMenu">
                 <button
                   mat-menu-item
-                  routerLink="/dashboard/lista-beneficiarios"
+                  routerLink="/"
                 >
-                  Lista beneficiarios
+                  gafas 1
                 </button>
-                <button mat-menu-item routerLink="/dashboard/calcular-mesada">
-                  Valor de mesada
+                <button mat-menu-item routerLink="/">
+                  Gafas 2
                 </button>
               </mat-menu>
             </li>
@@ -170,12 +170,12 @@
               <mat-menu #beneficiario="matMenu">
                 <button
                   mat-menu-item
-                  routerLink="/dashboard/lista-beneficiarios"
+                  routerLink="/"
                 >
-                  Lista beneficiarios
+                  Oferta 1
                 </button>
-                <button mat-menu-item routerLink="/dashboard/calcular-mesada">
-                  Valor de mesada
+                <button mat-menu-item routerLink="/">
+               Oferta 2
                 </button>
               </mat-menu>
             </li>

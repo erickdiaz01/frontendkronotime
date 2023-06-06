@@ -8,11 +8,17 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class FooterComponent implements OnInit {
   contactForm!: FormGroup;
-  constructor(private fb: FormBuilder) {
+  panelServicioAlClienteOpenState: Boolean = false;
+  panelNuestraEmpresaOpenState: Boolean = false;
+  constructor(private fb: FormBuilder) {}
+  ngOnInit(): void {
     this.contactForm = this.fb.group({
       email: ['', [Validators.required, Validators.email]],
-      tyc: [false, [Validators.requiredTrue]],
+      tyc: [false, Validators.requiredTrue],
     });
   }
-  ngOnInit(): void {}
+
+  onSubmit() {
+    this.contactForm.markAllAsTouched();
+  }
 }

@@ -1,0 +1,15 @@
+.principal-button{
+  text-decoration: none;
+  color: white;
+}
+
+.principal-button:hover , .principal-button:active{
+  color: lightgray;
+}
+
+.nav-list{
+  display: flex;
+  flex-direction: column;
+align-items: flex-start;
+}
+

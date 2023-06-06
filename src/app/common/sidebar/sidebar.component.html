@@ -1,1 +1,40 @@
-<p>sidebar works!</p>
+<mat-nav-list class="nav-list">
+  <button mat-button class="principal-button" [matMenuTriggerFor]="colecciones">
+    Colecciones
+    <mat-icon> expand_more </mat-icon>
+  </button>
+  <mat-menu #colecciones="matMenu">
+    <button mat-menu-item routerLink="/">Colecciones 1</button>
+    <button mat-menu-item routerLink="/dashboard/lista-rentas">
+      Colecciones 2
+    </button>
+  </mat-menu>
+  <button mat-button [matMenuTriggerFor]="beneficiario">
+    Hombre <mat-icon> expand_more </mat-icon>
+  </button>
+  <mat-menu #beneficiario="matMenu">
+    <button mat-menu-item routerLink="/">Hombre 1</button>
+    <button mat-menu-item routerLink="/">Hombre 2</button>
+  </mat-menu>
+  <button mat-button [matMenuTriggerFor]="beneficiario">
+    Mujer <mat-icon> expand_more </mat-icon>
+  </button>
+  <mat-menu #beneficiario="matMenu">
+    <button mat-menu-item routerLink="/">Mujer 1</button>
+    <button mat-menu-item routerLink="/">Mujer 2</button>
+  </mat-menu>
+  <button mat-button [matMenuTriggerFor]="beneficiario">
+    Gafas a 199.900 <mat-icon> expand_more </mat-icon>
+  </button>
+  <mat-menu #beneficiario="matMenu">
+    <button mat-menu-item routerLink="/">gafas 1</button>
+    <button mat-menu-item routerLink="/">Gafas 2</button>
+  </mat-menu>
+  <button mat-button [matMenuTriggerFor]="beneficiario">
+    Super Oferta <mat-icon> expand_more </mat-icon>
+  </button>
+  <mat-menu #beneficiario="matMenu">
+    <button mat-menu-item routerLink="/">Oferta 1</button>
+    <button mat-menu-item routerLink="/">Oferta 2</button>
+  </mat-menu>
+</mat-nav-list>

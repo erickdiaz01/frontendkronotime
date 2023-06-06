@@ -1,24 +1,3 @@
-@media only screen and (max-width: 750px) {
-  .newsletter {
-    margin-top: 40px;
-  }
-  .newslettercontent {
-    margin-top: 40px;
-
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-  .header-newsletter {
-    margin-top: 0;
-  }
-  .header-newsletter h2 {
-    line-height: 2em;
-  }
-  .sub-header-newsletter {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-}
 .header-newsletter {
   margin-bottom: 60px;
   text-align: center;
@@ -129,7 +108,6 @@
 .content-bottom-footer {
   width: 100%;
   margin: 0 auto;
-
 }
 .row {
   display: flex;
@@ -137,8 +115,6 @@
 }
 .col {
   flex: 1;
-
-
 }
 
 .content-bottom-footer h3 {
@@ -149,21 +125,22 @@
   line-height: 1.14285714rem;
   letter-spacing: 0.07142857rem;
   text-transform: uppercase;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: 700;
 }
-.footer-list{
+.footer-list {
   list-style: none;
+  color: #3d4246;
 }
-.footer-list-item{
+.footer-list-item {
   margin-bottom: 10px;
 }
-.icons-social{
+.icons-social {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
 }
-.icon-white{
+.icon-white {
   width: 30px;
   height: 30px;
   background-color: white;
@@ -177,20 +154,97 @@
   font-size: 18px;
   color: #000;
 }
-.politics-container{
+.politics-container {
   display: flex;
   justify-content: space-around;
 }
-.politics{
+.politics-container p {
+  color: #3d4246;
+}
+.politics {
   display: flex;
   justify-content: space-around;
   list-style: none;
 }
-.politics-item{
+.politics-item {
   color: white;
   margin: auto 10px;
   text-transform: uppercase;
   font-size: smaller;
 }
-@media (max-width: 768px) {
+.errors {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-menus {
+  display: none;
+}
+
+@media only screen and (max-width: 750px) {
+  .newsletter {
+    margin-top: 40px;
+  }
+  .newslettercontent {
+    margin-top: 40px;
+
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .header-newsletter {
+    margin-top: 0;
+  }
+  .header-newsletter h2 {
+    line-height: 2em;
+  }
+  .sub-header-newsletter {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 750px) {
+  .content-bottom-footer {
+    display: none;
+  }
+  .dropdown-menus {
+    display: block;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  .menus {
+    color: white;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .follow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+  }
+  .follow h3 {
+    text-align: center;
+  }
+  .menu-item {
+    color: white;
+    background: #000;
+    width: 100%;
+  }
+  mat-expansion-panel {
+    background-color: #000;
+    color: white;
+  }
+  mat-panel-title {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    text-transform: uppercase;
+  }
 }

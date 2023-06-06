@@ -21,7 +21,10 @@
             <button
               type="button"
               class="btn-newsletter"
-              [disabled]="contactForm.valid"
+              [disabled]="
+                contactForm.invalid || !contactForm.get('checkbox')?.value
+              "
+              (click)="onSubmit()"
             >
               Suscribirse
             </button>
@@ -37,22 +40,25 @@
           <span
             >Autorizo el tratamiento de mis <strong>Datos personales</strong>
           </span>
-          <mat-error
-            *ngIf="
-              contactForm.get('email')?.invalid &&
-              (contactForm.get('email')?.dirty ||
-                contactForm.get('email')?.touched)
-            "
-          >
-            El correo es requerido
-          </mat-error>
-          <mat-error
-            *ngIf="
-              contactForm.get('tyc')?.invalid && contactForm.get('tyc')?.touched
-            "
-          >
-            Acepta los terminos y condiciones
-          </mat-error>
+          <div class="errors">
+            <mat-error
+              *ngIf="
+                contactForm.get('email')?.invalid &&
+                (contactForm.get('email')?.dirty ||
+                  contactForm.get('email')?.touched)
+              "
+            >
+              El correo es requerido
+            </mat-error>
+            <mat-error
+              *ngIf="
+                contactForm.get('tyc')?.touched &&
+                contactForm.get('tyc')?.invalid
+              "
+            >
+              Acepta los terminos y condiciones
+            </mat-error>
+          </div>
         </div>
       </form>
     </div>
@@ -101,6 +107,55 @@
           </ul>
         </div>
       </div>
+    </article>
+    <article class="dropdown-menus">
+      <ul class="menus">
+        <li class="follow">
+          <h3>Siguenos</h3>
+          <ul class="icons-social">
+            <li class="icon-white"><i class="fab fa-facebook"></i></li>
+            <li class="icon-white"><i class="fab fa-instagram"></i></li>
+            <li class="icon-white"><i class="fab fa-tiktok"></i></li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <mat-expansion-panel
+            (opened)="panelServicioAlClienteOpenState = true"
+            (closed)="panelServicioAlClienteOpenState = false"
+          >
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                SERVICIO AL CLIENTE
+                <mat-icon> expand_more </mat-icon></mat-panel-title
+              >
+            </mat-expansion-panel-header>
+            <button mat-menu-item routerLink="/">Contáctanos</button>
+            <button mat-menu-item routerLink="/">Métodos de pago</button>
+            <button mat-menu-item routerLink="/">Cambios y Devoluciones</button>
+            <button mat-menu-item routerLink="/">Guias de tallas</button>
+            <button mat-menu-item routerLink="/">Encuesta</button>
+            <button mat-menu-item routerLink="/">SIC</button>
+            <button mat-menu-item routerLink="/">ADDI</button>
+            <button mat-menu-item routerLink="/">Recoge en tienda</button>
+          </mat-expansion-panel>
+        </li>
+        <li class="menu-item">
+          <mat-expansion-panel
+            (opened)="panelServicioAlClienteOpenState = true"
+            (closed)="panelServicioAlClienteOpenState = false"
+          >
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                NUESTRA EMPRESA
+                <mat-icon> expand_more </mat-icon></mat-panel-title
+              >
+            </mat-expansion-panel-header>
+            <button mat-menu-item routerLink="/">Quiénes somos</button>
+            <button mat-menu-item routerLink="/">Localizador de tiendas</button>
+            <button mat-menu-item routerLink="/">Prensa</button>
+          </mat-expansion-panel>
+        </li>
+      </ul>
     </article>
     <article class="politics-container">
       <p>©2023 Invicta</p>
