@@ -1,7 +1,7 @@
 import { MedioDePago } from './medio-de-pago';
 
 export interface Pago {
-  pagoId?: String;
+  _id?: String;
   modoPago: MedioDePago;
   fecha: Date;
   aprobado: Boolean;

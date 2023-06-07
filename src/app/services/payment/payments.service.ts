@@ -27,7 +27,7 @@ export class PaymentsService {
   }
 
   actualizarPago(pago: Pago): Observable<Pago> {
-    const url = `${this.apiUrl}/modificar/${pago.pagoId}`;
+    const url = `${this.apiUrl}/modificar/${pago._id}`;
     return this.http.put<Pago>(url, pago, this.httpOptions);
   }
 

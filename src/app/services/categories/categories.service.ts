@@ -14,8 +14,8 @@ export class CategoriesService {
 
   constructor(private http: HttpClient) {}
 
-  getCategorias(): Observable<Categoria[]> {
-    return this.http.get<Categoria[]>(`${this.apiUrl}/vercategorias`);
+  getCategorias(): Observable<any> {
+    return this.http.get<any>(`${this.apiUrl}/vercategorias`);
   }
   getCategoriaPorId(id: String): Observable<Categoria> {
     const url = `${this.apiUrl}/vercategorias/${id}`;
@@ -31,7 +31,7 @@ export class CategoriesService {
   }
 
   actualizarCategoria(categoria: Categoria): Observable<Categoria> {
-    const url = `${this.apiUrl}/modificar/${categoria.categoriaId}`;
+    const url = `${this.apiUrl}/modificar/${categoria._id}`;
     return this.http.put<Categoria>(url, categoria, this.httpOptions);
   }
 

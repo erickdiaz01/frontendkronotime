@@ -1,0 +1,69 @@
+<div class="shop-container">
+  <div class="shop-content">
+    <div class="grid-container" cols="3" rowHeight="2:1" gutterSize="16">
+      <div class="grid-item" *ngFor="let product of products">
+        <app-card-product
+          [product]="product"
+          [discount]="discount"
+          [image]="img"
+        ></app-card-product>
+      </div>
+    </div>
+
+    <section class="create-product-container">
+      <h3 class="title-create-product">CREA UN PRODUCTO</h3>
+      <form [formGroup]="createProductForm" class="form-create-product">
+        <div class="row">
+          <mat-form-field>
+            <mat-label>Nombre de producto</mat-label>
+            <input
+              matInput
+              #input
+              formControlName="nombre"
+              placeholder="Nombre"
+            />
+          </mat-form-field>
+
+          <mat-form-field>
+            <mat-label>Categoria</mat-label>
+            <mat-select formControlName="categoria">
+              <mat-option
+                *ngFor="let category of categories"
+                [value]="category._id"
+                >{{ category.nombre }}</mat-option
+              >
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="row">
+          <mat-form-field>
+            <mat-label>Textarea</mat-label>
+            <textarea formControlName="descripcion" matInput></textarea>
+          </mat-form-field>
+          <mat-form-field floatLabel="always">
+            <mat-label>Amount</mat-label>
+            <input
+              matInput
+              formControlName="costo"
+              type="number"
+              class="example-right-align"
+              placeholder="0"
+            />
+            <span matTextPrefix>$&nbsp;</span>
+          </mat-form-field>
+        </div>
+        <div class="row">
+          <button
+            mat-raised-button
+            type="button"
+            class="button-create-product"
+            [disabled]="createProductForm.invalid"
+            (click)="onCreateProduct()"
+          >
+            Crear producto
+          </button>
+        </div>
+      </form>
+    </section>
+  </div>
+</div>

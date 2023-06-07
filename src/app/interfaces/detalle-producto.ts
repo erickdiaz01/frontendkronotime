@@ -1,9 +1,8 @@
 import { Producto } from './producto';
 
 export interface DetalleProducto {
-  detalleProductoId?: String;
+  _id?: String;
   productos: Productos[];
-
 }
 
 interface Productos {

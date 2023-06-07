@@ -1,22 +1,22 @@
 <mat-card class="example-card">
-  <img mat-card-image src="{{ product.img }}" alt="product-image" />
+  <img mat-card-image src="{{ image }}" alt="product-image" />
   <button aria-label="Añadir a favoritos" class="favorite">
     <mat-icon>favorite</mat-icon>
   </button>
-  <p class="discount">{{ product.discount | percent }}</p>
+  <p class="discount">{{discount | percent }}</p>
   <mat-card-content>
     <h4 class="product-description">
-      {{ product.description }}
+      {{ product.nombre }}
     </h4>
   </mat-card-content>
   <mat-card-actions class="card-bottom">
     <div class="prices">
       <p class="oldprice">
-        {{ product.oldprice | currency : "" : "symbol" : "1.0" }}
+        {{ product.costo | currency : "" : "symbol" : "1.0" }}
       </p>
       <p class="newprice">
         {{
-          product.oldprice * (1 - product.discount)
+          product.costo * (1 - discount)
             | currency : "" : "symbol" : "1.0"
         }}
       </p>

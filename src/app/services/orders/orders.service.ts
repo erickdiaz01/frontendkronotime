@@ -31,7 +31,7 @@ export class OrdersService {
   }
 
   actualizarOrden(orden: Orden): Observable<Orden> {
-    const url = `${this.apiUrl}/modificar/${orden.ordenId}`;
+    const url = `${this.apiUrl}/modificar/${orden._id}`;
     return this.http.put<Orden>(url, orden, this.httpOptions);
   }
 

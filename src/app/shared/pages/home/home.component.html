@@ -1,4 +1,4 @@
-<div class="home-container" >
+<div class="home-container">
   <div class="slick-container">
     <div class="slick-wrapper">
       <ngx-slick-carousel
@@ -37,7 +37,11 @@
             *ngFor="let slide of slidesProduct"
             class="slideProduct"
           >
-            <app-card-product [product]="slide"></app-card-product>
+            <app-card-product
+              [product]="slide.product"
+              [image]="slide.img"
+              [discount]="slide.discount"
+            ></app-card-product>
           </div>
         </ngx-slick-carousel>
       </div>
@@ -60,6 +64,8 @@
 
   <div *ngIf="mostrarPopUp" class="popup">
     <img src="../../../../assets/popup.jpg" alt="popup" class="popup-image" />
-    <button class="close-button" (click)="cerrarPopUp()"><i class="fa fa-times"></i></button>
+    <button class="close-button" (click)="cerrarPopUp()">
+      <i class="fa fa-times"></i>
+    </button>
   </div>
 </div>

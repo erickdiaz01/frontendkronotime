@@ -38,52 +38,100 @@ export class HomeComponent implements OnInit {
 
   slidesProduct = [
     {
+      product: {
+        nombre: 'Gafas De Sol Invicta Bolt Para Hombre - Bolt Stella C2',
+        costo: 499000,
+        categoria: {
+          nombre: 'Relojes',
+        },
+        descripcion: 'Reloj a prueba de agua',
+      },
       img: 'https://cdn.shopify.com/s/files/1/0275/8420/0792/products/810043041768_1024x1024@2x.jpg?v=1684528897',
       discount: 0.6,
-      description: 'Gafas De Sol Invicta Bolt Para Hombre - Bolt Stella C2',
-      oldprice: 499000,
     },
     {
       img: 'https://cdn.shopify.com/s/files/1/0275/8420/0792/products/810043041591_360x.jpg?v=1684528858',
       discount: 0.6,
-      description: 'Gafas De Sol Invicta Bolt Para Hombre - Bolt Stella C2',
-      oldprice: 390000,
+      product: {
+        nombre: 'Gafas De Sol Invicta Bolt Para Hombre - Bolt Stella C3',
+        costo: 499000,
+        categoria: {
+          nombre: 'Relojes',
+        },
+        descripcion: 'Reloj a prueba de agua',
+      },
     },
     {
       img: 'https://cdn.shopify.com/s/files/1/0275/8420/0792/products/810043041515_201_1024x1024@2x.jpg?v=1684532962',
       discount: 0.4,
-      description: 'Gafas De Sol Invicta Bolt Para Hombre - Bolt Stella C2',
-      oldprice: 300000,
+      product: {
+        nombre: 'Gafas De Sol Invicta Bolt Para Hombre - Bolt Stella C2',
+        costo: 499000,
+        categoria: {
+          nombre: 'Relojes',
+        },
+        descripcion: 'Reloj a prueba de agua',
+      },
     },
     {
       img: 'https://cdn.shopify.com/s/files/1/0275/8420/0792/products/810043041492_201_1024x1024@2x.jpg?v=1684527788',
       discount: 0.6,
-      description: 'Gafas De Sol Invicta Bolt Para Hombre - Bolt Stella C2',
-      oldprice: 499000,
+      product: {
+        nombre: 'Gafas De Sol Invicta Bolt Para Hombre - Bolt Stella C2',
+        costo: 499000,
+        categoria: {
+          nombre: 'Relojes',
+        },
+        descripcion: 'Reloj a prueba de agua',
+      },
     },
     {
       img: 'https://cdn.shopify.com/s/files/1/0275/8420/0792/products/810043041478_201_1024x1024@2x.jpg?v=1684529951',
       discount: 0.4,
-      description: 'Gafas De Sol Invicta Bolt Para Hombre - Bolt Stella C2',
-      oldprice: 450000,
+      product: {
+        nombre: 'Gafas De Sol Invicta Bolt Para Hombre - Bolt Stella C2',
+        costo: 499000,
+        categoria: {
+          nombre: 'Relojes',
+        },
+        descripcion: 'Reloj a prueba de agua',
+      },
     },
     {
       img: 'https://cdn.shopify.com/s/files/1/0275/8420/0792/products/810043041430_201_360x.jpg?v=1684527757',
       discount: 0.6,
-      description: 'Gafas De Sol Invicta Bolt Para Hombre - Bolt Stella C2',
-      oldprice: 499000,
+      product: {
+        nombre: 'Gafas De Sol Invicta Bolt Para Hombre - Bolt Stella C2',
+        costo: 499000,
+        categoria: {
+          nombre: 'Relojes',
+        },
+        descripcion: 'Reloj a prueba de agua',
+      },
     },
     {
       img: 'https://cdn.shopify.com/s/files/1/0275/8420/0792/products/810043041782_1024x1024@2x.jpg?v=1684527912',
       discount: 0.6,
-      description: 'Gafas De Sol Invicta Bolt Para Hombre - Bolt Stella C2',
-      oldprice: 499000,
+      product: {
+        nombre: 'Gafas De Sol Invicta Bolt Para Hombre - Bolt Stella C2',
+        costo: 499000,
+        categoria: {
+          nombre: 'Relojes',
+        },
+        descripcion: 'Reloj a prueba de agua',
+      },
     },
     {
       img: 'https://cdn.shopify.com/s/files/1/0275/8420/0792/products/810043041775_360x.jpg?v=1684527116',
       discount: 0.6,
-      description: 'Gafas De Sol Invicta Bolt Para Hombre - Bolt Stella C2',
-      oldprice: 499000,
+      product: {
+        nombre: 'Gafas De Sol Invicta Bolt Para Hombre - Bolt Stella C2',
+        costo: 499000,
+        categoria: {
+          nombre: 'Relojes',
+        },
+        descripcion: 'Reloj a prueba de agua',
+      },
     },
   ];
   slideProductsConfig = {

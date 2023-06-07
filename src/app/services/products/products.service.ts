@@ -13,15 +13,15 @@ export class ProductsService {
 
   constructor(private http: HttpClient) {}
 
-  getProductos(): Observable<Producto[]> {
-    return this.http.get<Producto[]>(`${this.apiUrl}/verproductos`);
+  getProductos(): Observable<any> {
+    return this.http.get<any>(`${this.apiUrl}/verproductos`);
   }
   getProductoPorId(id: String): Observable<Producto> {
     const url = `${this.apiUrl}/verproductos/${id}`;
     return this.http.get<Producto>(url);
   }
 
-  crearProducto(producto: Producto): Observable<Producto> {
+  crearProducto(producto: Producto): Observable<any> {
     return this.http.post<Producto>(
       `${this.apiUrl}/crear`,
       producto,
@@ -30,7 +30,7 @@ export class ProductsService {
   }
 
   actualizarProducto(producto: Producto): Observable<Producto> {
-    const url = `${this.apiUrl}/modificar/${producto.productoId}`;
+    const url = `${this.apiUrl}/modificar/${producto._id}`;
     return this.http.put<Producto>(url, producto, this.httpOptions);
   }
 

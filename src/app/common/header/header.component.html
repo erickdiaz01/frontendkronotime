@@ -116,10 +116,10 @@
             </li>
 
             <li>
-              <button mat-button [matMenuTriggerFor]="beneficiario">
+              <button mat-button [matMenuTriggerFor]="hombre">
                 Hombre <mat-icon> expand_more </mat-icon>
               </button>
-              <mat-menu #beneficiario="matMenu">
+              <mat-menu #hombre="matMenu">
                 <button
                   mat-menu-item
                   routerLink="/"
@@ -132,10 +132,10 @@
               </mat-menu>
             </li>
             <li>
-              <button mat-button [matMenuTriggerFor]="beneficiario">
+              <button mat-button [matMenuTriggerFor]="mujer">
                 Mujer <mat-icon> expand_more </mat-icon>
               </button>
-              <mat-menu #beneficiario="matMenu">
+              <mat-menu #mujer="matMenu">
                 <button
                   mat-menu-item
                   routerLink="/"
@@ -148,10 +148,10 @@
               </mat-menu>
             </li>
             <li>
-              <button mat-button [matMenuTriggerFor]="beneficiario">
+              <button mat-button [matMenuTriggerFor]="gafas">
                 Gafas a 199.900 <mat-icon> expand_more </mat-icon>
               </button>
-              <mat-menu #beneficiario="matMenu">
+              <mat-menu #gafas="matMenu">
                 <button
                   mat-menu-item
                   routerLink="/"
@@ -164,10 +164,10 @@
               </mat-menu>
             </li>
             <li>
-              <button mat-button [matMenuTriggerFor]="beneficiario">
+              <button mat-button [matMenuTriggerFor]="oferta">
                 Super Oferta <mat-icon> expand_more </mat-icon>
               </button>
-              <mat-menu #beneficiario="matMenu">
+              <mat-menu #oferta="matMenu">
                 <button
                   mat-menu-item
                   routerLink="/"
@@ -187,7 +187,7 @@
             <button button mat-icon-button>
               <mat-icon style="color: white">search</mat-icon>
             </button>
-            <button button mat-icon-button>
+            <button button mat-icon-button routerLink="/shop">
               <mat-icon style="color: white">shopping_cart</mat-icon>
             </button>
             <button button mat-icon-button class="account">

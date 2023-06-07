@@ -1,4 +1,4 @@
 export interface MedioDePago {
-  modoPagoId?: String;
+  _id?: String;
   tipo: String;
 }

@@ -3,7 +3,7 @@ import { DetalleProducto } from './detalle-producto';
 import { Pago } from './pago';
 
 export interface Orden {
-  ordenId?: String;
+  _id?: String;
   cliente: Cliente;
   pago: Pago;
   detalleProductos: DetalleProducto;

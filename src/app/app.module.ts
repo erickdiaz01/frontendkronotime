@@ -9,9 +9,11 @@ import { HeaderComponent } from './common/header/header.component';
 import { FooterComponent } from './common/footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material/material.module';
+import { HttpClientModule } from '@angular/common/http';
 import { SidebarComponent } from './common/sidebar/sidebar.component';
 import { HomeComponent } from './shared/pages/home/home.component';
 import { CardProductComponent } from './common/card-product/card-product.component';
+import { ShopComponent } from './shared/pages/shop/shop.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,7 @@ import { CardProductComponent } from './common/card-product/card-product.compone
     FooterComponent,
     SidebarComponent,
     CardProductComponent,
+    ShopComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,11 +32,9 @@ import { CardProductComponent } from './common/card-product/card-product.compone
     BrowserAnimationsModule,
     MaterialModule,
     SlickCarouselModule,
-
-
-
+    HttpClientModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

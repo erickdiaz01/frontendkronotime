@@ -31,7 +31,7 @@ export class PaymentMethodService {
   }
 
   actualizarMedioDePago(medioDePago: MedioDePago): Observable<MedioDePago> {
-    const url = `${this.apiUrl}/modificar/${medioDePago.modoPagoId}`;
+    const url = `${this.apiUrl}/modificar/${medioDePago._id}`;
     return this.http.put<MedioDePago>(url, medioDePago, this.httpOptions);
   }
 
